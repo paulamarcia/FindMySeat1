@@ -1,0 +1,31 @@
+﻿@{
+    //Layout = null;
+    
+
+
+
+}
+
+<h1>Welcome to FIND MY SEAT</h1>
+
+
+
+<h3>Choose a Movie</h3>
+
+
+
+<p><a asp-controller="Movie" asp-action="Add"> Find a Movie</a></p>
+
+
+
+
+<ul>
+    @foreach(string movie in ViewBag.movies)
+    {
+        
+        <li>@movie</li>
+
+    }
+    
+
+</ul>
